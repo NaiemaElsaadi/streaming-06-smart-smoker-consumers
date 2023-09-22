@@ -1,5 +1,5 @@
 # streaming-06-smart-smoker-consumers
-
+ In this project, we'll add the consumers, implementing analytics based on a rolling window of time, and raise an alert when interesting events are detected. 
 
 <br>Author: Naiema Elsaadi
 <br>Date: September 22, 2023
@@ -88,4 +88,6 @@ The producer (bbq_producer_smoker.py) collects temperature data from sensors and
 
 
 ## Reference
+https://github.com/denisecase/streaming-04-multiple-consumers/blob/main/v2_listening_worker.py
+
 
