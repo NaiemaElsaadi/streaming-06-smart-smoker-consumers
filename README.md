@@ -77,6 +77,7 @@ The producer (bbq_producer_smoker.py) collects temperature data from sensors and
 ![My Screenshot](foodB_listener.png)
 
 2. RabbitMQ Console
+## RabbitMQ Console
 
 <br>Here is a screenshot of the RabbitMQ console with the producer and consumers running, showing message queues and message traffic:
 
