@@ -1,8 +1,8 @@
 # streaming-06-smart-smoker-consumers
 
 
-**Author**: Naiema Elsaadi
-**Date**: September 22, 2023
+<br>Author: Naiema Elsaadi
+<br>Date: September 22, 2023
 
 ## Table of Contents
 
@@ -28,7 +28,7 @@ Before running the project, ensure you have the following prerequisites:
 - VS studio Code
 - anaconda prompt (miniconda3)
 - The following modules are used in this project:
-<b>csv
+<br>csv
 <br>webbrowser
 <br>signal
 <br>sys
@@ -46,31 +46,31 @@ Follow these steps to run the project:
 2. Navigate to the project directory:
 3. Start the producer to collect temperature data:
 4. Open separate terminal windows and start the consumers for smoker temperature and food temperatures:
-Smoker Temperature Consumer:python 01-smoker_listener.py
-Food A Temperature Consumer:python 02-Food-A_listener.py
-Food B Temperature Consumer:python 02-Food-B_listener.py
+<br>Smoker Temperature Consumer:python 01-smoker_listener.py
+<br>Food A Temperature Consumer:python 02-Food-A_listener.py
+<br>Food B Temperature Consumer:python 02-Food-B_listener.py
 
 ## Project Structure
 
 The project structure is organized as follows:
-streaming-05-getting-started/
-├── bbq_producer_smoker.py
-├── 01-smoker_listener.py
-├── 02-Food-A_listener.py
-├── 02-Food-B_listener.py
-├── smoker-temps.csv
-├── Screenshots for running 
+<br>streaming-05-getting-started/
+<br> bbq_producer_smoker.py
+<br> 01-smoker_listener.py
+<br> 02-Food-A_listener.py
+<br> 02-Food-B_listener.py
+<br> smoker-temps.csv
+<br> Screenshots for running 
 
 
 ## How It Works
 
 The producer (bbq_producer_smoker.py) collects temperature data from sensors and sends it to RabbitMQ message queues.
-Three consumers (01-smoker_listener.py, 02-Food-A_listener.py, 02-Food-B_listener.py) listen to their respective message queues.
-Each consumer maintains a rolling window of temperature data, calculates analytics, and raises alerts based on predefined conditions.
+<br>Three consumers (01-smoker_listener.py, 02-Food-A_listener.py, 02-Food-B_listener.py) <br>listen to their respective message queues.
+<br>Each consumer maintains a rolling window of temperature data, calculates analytics, and raises alerts based on predefined conditions.
 
 ## Screenshots
 1. Producer and Consumers
-Here is a screenshots of the multiple terminals with the three consumers.
+<br>Here is a screenshots of the multiple terminals with the three consumers.
 
 ![My Screenshot](smoker_listener.png)
 ![My Screenshot](foodA_listener.png)
@@ -78,7 +78,7 @@ Here is a screenshots of the multiple terminals with the three consumers.
 
 2. RabbitMQ Console
 
-Here is a screenshot of the RabbitMQ console with the producer and consumers running, showing message queues and message traffic:
+<br>Here is a screenshot of the RabbitMQ console with the producer and consumers running, showing message queues and message traffic:
 
 ![Streaming in Action](RabbitMQ5.png)
 ![Streaming in Action](RabbitMQ5_1.png)
