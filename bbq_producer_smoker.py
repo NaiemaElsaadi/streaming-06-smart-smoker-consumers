@@ -1,12 +1,12 @@
 """
-The project is to create a producer that reads sensor data from the CSV file 
+The scrip creates a producer that reads sensor data from the CSV file 
 and sends it to the specified RabbitMQ queues, with a frequency of one value 
 every half minute (sleep_secs = 30). 
 It also opens the RabbitMQ Admin website.
 The CSV file contains temperature readings for a smoker and two foods (Food A and Food B).
 
 Author: Naiema Elsaadi
-Date: 09/16/2023
+Date: 09/22/2023
 """
 
 import pika
@@ -56,8 +56,7 @@ def send_temp(host: str, queue_name: str, queue_name2: str, queue_name3: str, me
         Time, Channel1, Channel2, Channel3 = data_row
 
         # sleep for a few seconds
-        time.sleep(30) # wait 30 seconds between messages
-
+       
         try:
             # create a blocking connection to the RabbitMQ server
             conn = pika.BlockingConnection(pika.ConnectionParameters(host))
