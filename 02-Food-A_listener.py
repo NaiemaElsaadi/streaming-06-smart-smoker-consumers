@@ -1,8 +1,8 @@
 """
     This program listens for work messages continuously. 
-    It is listening for messages from the bbq_producer_smoker.  It will recieve 
-    messages the include the temperature of food A that is located in 
-    the smoker.  It will also send an alert if the food has not warmed up
+    It is listening for messages from bbq_producer_smoker.  
+    It will recieve messages that include the temperature of food A that is located in 
+    the smoker. It will also send an alert if the food has not warmed up
     by at least a degree in a 10 minute period.
 
     Naiema Elsaadi 9/22/23
@@ -15,7 +15,7 @@ import time
 from collections import deque
 
 FA_deque = deque(maxlen = 20)
-alert = "Alert! Alert! Food A is temp is stalled and not warming up"
+alert = "Alert! Alert! Alert! Food A's temperature is stalled and not warming up"
 
 
 # define a callback function to be called when a message is received
@@ -37,7 +37,7 @@ def FoodA_callback(ch, method, properties, body):
             print(alert)
             
 
-    print(f" [x] Received the food A temp.  Food A temp is {FoodA_message}")
+    print(f" [x] Received the food A temperature.  Food A temperature is {FoodA_message}")
 
     
 

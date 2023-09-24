@@ -1,5 +1,5 @@
 # streaming-06-smart-smoker-consumers
- In this project, we'll add the consumers, implementing analytics based on a rolling window of time, and raise an alert when interesting events are detected. 
+ In this project, we'll add consumers, implement analytics based on a rolling window of time, and raise an alert when interesting events are detected. 
 
 <br>Author: Naiema Elsaadi
 <br>Date: September 22, 2023
@@ -69,14 +69,15 @@ The producer (bbq_producer_smoker.py) collects temperature data from sensors and
 <br>Each consumer maintains a rolling window of temperature data, calculates analytics, and raises alerts based on predefined conditions.
 
 ## Screenshots
-1. Producer and Consumers
+
+## Producer and Consumers
 <br>Here is a screenshots of the multiple terminals with the three consumers.
 
 ![My Screenshot](smoker_listener.png)
 ![My Screenshot](foodA_listener.png)
 ![My Screenshot](foodB_listener.png)
 
-2. RabbitMQ Console
+
 ## RabbitMQ Console
 
 <br>Here is a screenshot of the RabbitMQ console with the producer and consumers running, showing message queues and message traffic:
@@ -88,6 +89,9 @@ The producer (bbq_producer_smoker.py) collects temperature data from sensors and
 
 
 ## Reference
-https://github.com/denisecase/streaming-04-multiple-consumers/blob/main/v2_listening_worker.py
+
+<b> https://www.rabbitmq.com/tutorials/tutorial-two-python.html
+
+<br> https://github.com/denisecase/streaming-04-multiple-consumers/blob/main/v2_listening_worker.py
 
 

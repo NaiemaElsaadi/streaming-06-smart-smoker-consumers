@@ -1,6 +1,6 @@
 """
-    This program will listen and consume messages from the bbq_producer_smoker
-    for the temperature of the smoker every 30 seconds. It will also send 
+    This program listens and consumes messages from bbq_producer_smoker
+    for the temperature of the smoker every 30 seconds. It also sends 
     an alert if in a 2.5 minute period the smoker goes down by more than 
     15 degrees in temperature. 
 
@@ -14,7 +14,7 @@ import time
 from collections import deque
 
 s_deque = deque(maxlen = 5)
-alert = "Alert! Alert! Smoker temperature is decreasing at a high rate! Temp has gone down by more than 15 degrees in 2.5 minutes"
+alert = "Alert! Alert! Alert! Smoker temperature is decreasing at a high rate! Temperature has gone down by more than 15 degrees in 2.5 minutes"
 
 
 # define a callback function to be called when a message is received
@@ -35,7 +35,7 @@ def smoker_callback(ch, method, properties, body):
             print(alert)
     # decode the binary message body to a string
     
-    print(f" [x] Received the temp.  Smoker temp is {smoker_message}")
+    print(f" [x] Received the temperature.  Smoker temperature is {smoker_message}")
 
     
 
